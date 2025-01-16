@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,13 @@
     <link rel="stylesheet" href="login.css">
     <link rel="shortcut icon" href="movieimage/favicon-16x16.png" type="image/x-icon">
 </head>
+
 <body>
+
     <header>
+        <!-- Header-sectie met een navigatiebalk -->
         <nav class="navbar">
+            <!-- Navigatiebalk -->
             <ul class="nav-links">
                 <a href="../index.html">Home</a>
                 <a href="#genres">Genres</a>
@@ -19,25 +24,30 @@
         </nav>
     </header>
 
-
     <div class="login-container">
         <h1>Inloggen</h1>
+
         <form action="admin.html" method="get">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="Voer je email hier" required>
+            <!-- Action verwijst naar admin.html; method is ingesteld op GET om gegevens te verzenden -->
 
-        <label for="password">Wachtwoord:</label>
-        <input type="password" name="password" id="password" placeholder="Voor je Wachtwoord hier" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Voer je email hier" required>
 
-        <button type="submit">Inloggen</button> 
-        
+            <label for="password">Wachtwoord:</label>
+            <input type="password" name="password" id="password" placeholder="Voer je wachtwoord hier" required>
+
+
+            <button type="submit">Inloggen</button>
+            <!-- Knop om het formulier te verzenden -->
         </form>
     </div>
+
 
     <footer>
         <p>&copy; 2025 Filmbeheer. Alle rechten voorbehouden.</p>
     </footer>
 
-    
+
 </body>
+
 </html>

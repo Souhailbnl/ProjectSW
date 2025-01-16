@@ -1,16 +1,21 @@
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif; /* Gebruik Google Fonts */
+    /* Verwijdert de standaard marges van de browser */
+    font-family: 'Roboto', sans-serif; 
+    /* Stelt Roboto in als standaardlettertype, geïmporteerd via Google Fonts */
     background-color: #121212;
     color: #ffffff;
 }
 
-/* Navigatiebalk */
+/* Stijlen voor de navigatiebalk */
 .navbar {
     background-color: #000;
     padding: 10px 20px;
+    /* Binnenmarges toegevoegd voor meer ruimte in de navigatiebalk */
     display: flex;
+    /* Flexbox ingesteld om de items naast elkaar te plaatsen */
     justify-content: space-between;
+    /* Zorgt ervoor dat de links verdeeld worden over de breedte */
     align-items: center;
 }
 
@@ -18,20 +23,24 @@ body {
     color: #ffffff;
     text-decoration: none;
     margin: 0 15px;
+    /* Ruimte tussen de links toegevoegd */
     font-weight: bold;
     font-size: 1rem;
     transition: color 0.3s ease;
+    /* Soepele overgangseffecten bij hover */
 }
 
 .nav-links a:hover {
-    color: #ffa500; /* Oranje hover-kleur */
+    color: #ffa500;
+    /* Oranje kleur bij hover-effect */
 }
 
-/* Intro */
+/* Introductie-sectie */
 .intro {
     text-align: center;
     padding: 20px;
     background-color: #1a1a1a;
+    /* Donkere grijze achtergrondkleur */
 }
 
 .intro h1 {
@@ -43,10 +52,11 @@ body {
     font-size: 1.2rem;
 }
 
-/* Filmgrid */
+/* Filmgrid-sectie */
 .filmgrid {
     padding: 20px;
     background-color: #1a1a1a;
+    /* Donkere grijze achtergrondkleur */
 }
 
 .filmgrid h2 {
@@ -57,40 +67,45 @@ body {
 
 .grid {
     display: grid;
+    /* Geeft een grid-indeling voor de films */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Automatische kolommen die zich aanpassen aan de schermgrootte */
     gap: 20px;
+    /* Ruimte tussen de kaarten */
     justify-content: center;
 }
 
 .film-card {
     border-radius: 10px;
+    /* Maakt de hoeken van de filmkaart afgerond */
     overflow: hidden;
+    /* Zorgt ervoor dat de inhoud niet buiten de kaart loopt */
     text-align: center;
     transition: transform 0.3s ease;
 }
 
 .film-card:hover {
     transform: translateY(-5px);
-    
 }
 
 .film-card img {
     width: 100%;
     height: auto;
+
 }
 
 .film-card h3 {
     padding: 10px;
+    /* Binnenruimte rond de tekst */
     font-size: 1.1rem;
     color: #ffffff;
 }
 
-
-
-/* Footer */
+/* Footer-sectie */
 footer {
     text-align: center;
     padding: 10px 20px;
+    /* Binnenruimte toegevoegd aan de footer */
     background-color: #000;
     color: #ffffff;
 }
@@ -101,34 +116,36 @@ footer p {
 
 /*******************************************************************/
 
+/* Stijlen voor de film-detailpagina */
 .film-info img {
     width: 25%;
-    height: auto;  
+    height: auto;
+
 }
 
 .film-card a {
     color: #ffffff;
     text-decoration: none;
     margin: 0 15px;
+    /* Ruimte tussen de links */
     font-weight: bold;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
-
 .film-card a:hover {
-    color: #ffa500; /* Oranje hover-kleur */
-
+    color: #ffa500;
+    /* Oranje kleur bij hover */
 }
 
 /***********************************************************************/
 
+/* Specifieke stijlen voor de login-link */
 .login-link {
-    color: #ff5722;
+    color: #ffa500;
     font-weight: bold;
     text-decoration: none;
 }
 
-
-
+/* Google Fonts importeren */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
