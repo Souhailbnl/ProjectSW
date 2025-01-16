@@ -85,6 +85,8 @@ body {
     color: #ffffff;
 }
 
+
+
 /* Footer */
 footer {
     text-align: center;
@@ -95,6 +97,36 @@ footer {
 
 footer p {
     font-size: 0.9rem;
+}
+
+/*******************************************************************/
+
+.film-info img {
+    width: 25%;
+    height: auto;  
+}
+
+.film-card a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+
+.film-card a:hover {
+    color: #ffa500; /* Oranje hover-kleur */
+
+}
+
+/***********************************************************************/
+
+.login-link {
+    color: #ff5722;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 
